@@ -1,5 +1,5 @@
 'use strict';
-
+/* global juke */
 juke.controller('SidebarCtrl', function ($scope, $rootScope) {
 
   $scope.viewAlbums = function () {

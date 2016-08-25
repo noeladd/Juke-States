@@ -5,9 +5,9 @@ juke.config(function ($stateProvider){
         templateUrl: '/templates/allArtists.html',
         resolve: {
             artists: function(ArtistFactory) {
-                return ArtistFactory.fetchAll()
+                return ArtistFactory.fetchAll();
             }
         },
         controller: 'ArtistsCtrl'
-    })
-})
+    });
+});

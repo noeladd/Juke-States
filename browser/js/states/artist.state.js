@@ -19,16 +19,16 @@ juke.config(function ($stateProvider){
                 return AlbumFactory.fetchByArtist($stateParams.id);
             }
         },
-        controller: "ArtistAlbumsCtrl"
+        controller: 'ArtistAlbumsCtrl'
     })
     .state('artist.songs', {
         url: '/songs',
         templateUrl: 'templates/songs.html',
         resolve: {
             songs: function(SongFactory, $stateParams){
-                return SongFactory.fetchByArtist($stateParams.id)
+                return SongFactory.fetchByArtist($stateParams.id);
             }
         },
-        controller: "ArtistSongsCtrl"
-    })
+        controller: 'ArtistSongsCtrl'
+    });
 });

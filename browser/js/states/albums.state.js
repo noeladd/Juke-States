@@ -8,6 +8,6 @@ juke.config(function ($stateProvider){
                 return AlbumFactory.fetchAll();
             }
         },
-        controller:  "AlbumsCtrl" 
+        controller:  'AlbumsCtrl'
     });
 });

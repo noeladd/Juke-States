@@ -1,5 +1,5 @@
 'use strict';
-
+/* global juke */
 juke.factory('PlayerFactory', function ($rootScope) {
 
   // state
@@ -44,7 +44,7 @@ juke.factory('PlayerFactory', function ($rootScope) {
     return currentSong;
   };
 
-  function mod (num, m) { return ((num % m) + m) % m; };
+  function mod (num, m) { return ((num % m) + m) % m; }
 
   function skip (interval) {
     var index = currentList.indexOf(currentSong);

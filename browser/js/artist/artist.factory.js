@@ -1,5 +1,5 @@
 'use strict';
-
+/* global juke */
 juke.factory('ArtistFactory', function ($http, $q, AlbumFactory, SongFactory) {
 
   var ArtistFactory = {};

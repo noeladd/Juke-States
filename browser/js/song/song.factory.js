@@ -1,5 +1,5 @@
 'use strict';
-
+/* global juke */
 juke.factory('SongFactory', function ($http) {
 
   return {
@@ -9,7 +9,7 @@ juke.factory('SongFactory', function ($http) {
     },
     fetchByArtist: function (id) {
       return $http.get('/api/artists/' + id + '/songs')
-      .then(function (response) {return response.data; })
+      .then(function (response) {return response.data; });
     }
   };
 

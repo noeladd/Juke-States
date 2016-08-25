@@ -5,7 +5,7 @@
 
 juke.controller('AlbumCtrl', function ($scope, PlayerFactory, album) {
 
-  $scope.album = album
+  $scope.album = album;
 
   // main toggle
   $scope.toggle = function (song) {
@@ -31,7 +31,7 @@ juke.controller('AlbumCtrl', function ($scope, PlayerFactory, album) {
 /* ALBUMS FOR ONE ARTIST CONTROLLER */
 juke.controller('ArtistAlbumsCtrl', function ($scope, PlayerFactory, $stateParams, albums) {
     $scope.albums = albums;
-})
+});
 
 /* ALBUMS (PLURAL) CONTROLLER */
 

@@ -1,5 +1,5 @@
 'use strict';
-
+/* global juke */
 /* ARTISTS (PLURAL) CONTROLLER */
 
 juke.controller('ArtistsCtrl', function ($scope, artists) {

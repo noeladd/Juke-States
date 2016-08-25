@@ -1,5 +1,5 @@
 'use strict';
-
+/* global juke*/
 juke.factory('AlbumFactory', function ($http, SongFactory) {
 
   var AlbumFactory = {};
@@ -24,7 +24,7 @@ juke.factory('AlbumFactory', function ($http, SongFactory) {
     return $http.get('/api/artists/' + id + '/albums')
     .then(function (response) { return response.data; })
     .then(function (albums) { return albums.map(AlbumFactory.convert); });
-  }
+  };
 
   AlbumFactory.convert = function (album) {
     album.imageUrl = '/api/albums/' + album.id + '/image';

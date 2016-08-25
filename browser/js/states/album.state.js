@@ -9,5 +9,6 @@ juke.config(function ($stateProvider){
             }
         },
         controller: 'AlbumCtrl'
-    })
+    });
 })
+;

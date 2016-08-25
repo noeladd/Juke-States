@@ -4,7 +4,7 @@ juke.controller('ArtistSongsCtrl', function($scope, songs, PlayerFactory){
     $scope.songs = songs;
 
     $scope.isPlaying = function(song) {
-        return PlayerFactory.isPlaying()&& PlayerFactory.getCurrentSong() === song;
+        return PlayerFactory.isPlaying() && PlayerFactory.getCurrentSong() === song;
     };
     $scope.getCurrentSong = function () {
         return PlayerFactory.getCurrentSong();
@@ -19,3 +19,4 @@ juke.controller('ArtistSongsCtrl', function($scope, songs, PlayerFactory){
     }
   };
 })
+;

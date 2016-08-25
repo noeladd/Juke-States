@@ -1,3 +1,5 @@
+/* global chai inject */
+
 var expect = chai.expect;
 
 describe('`PlayerFactory` factory', function () {
@@ -180,7 +182,7 @@ describe('`PlayerFactory` factory', function () {
       this.timeout(5000);
       audioMock.addEventListener('playing', function () {
         setTimeout(function () {
-          expect(PlayerFactory.getProgress()).to.be.closeTo(1/SONG1_DURATION_SECS, 0.01);
+          expect(PlayerFactory.getProgress()).to.be.closeTo(1 / SONG1_DURATION_SECS, 0.01);
           done();
         }, 1000);
       });
