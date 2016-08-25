@@ -15,6 +15,11 @@
     <script src="/js/artist/artist.controllers.js" defer></script>
     <script src="/js/artist/artist.factory.js" defer></script>
     <script src="/js/song/song.factory.js" defer></script>
+    <script src="/js/states/albums.state.js" defer></script>
+    <script src="/js/states/artists.state.js" defer></script>
+    <script src="/js/states/album.state.js" defer></script>
+    <script src="/js/states/artist.state.js" defer></script>
+    <script src="/js/song/song.controller.js" defer></script>
     <script src="/angular-ui-router/release/angular-ui-router.js" defer></script>
   </head>
   <body ng-app="juke">
@@ -25,12 +30,12 @@
           <img src="juke.svg" class="logo">
           <section>
             <h4 class="menu-item active">
-              <a href="#" ng-click="viewAlbums()">ALBUMS</a>
+              <a ui-sref="albumList">ALBUMS</a>
             </h4>
           </section>
           <section>
             <h4 class="menu-item">
-              <a ng-click="viewAllArtists()" href="#">ARTISTS</a>
+              <a ui-sref="artistList">ARTISTS</a>
             </h4>
           </section>
         </sidebar>
